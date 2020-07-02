@@ -58,7 +58,7 @@ spring:
             scope: openid
         provider:
           wso2:
-            issuer-uri: ${provider.host}/oauth2/oidcdiscovery
+            issuer-uri: ${provider.host}/oauth2/token
 
   thymeleaf:
     cache: false
@@ -85,7 +85,7 @@ spring:
             scope: openid
         provider:
           wso2:
-            issuer-uri: ${provider.host}/oauth2/oidcdiscovery
+            issuer-uri: ${provider.host}/oauth2/token
 
   thymeleaf:
     cache: false

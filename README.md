@@ -12,14 +12,14 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
   
  3. Click **Show More**
  
- 4. Open **OIDC Web Application** template.
+ 4. Open the **OIDC Web Application** template.
   
  5. Enter **Name** and **Description** and click **Next**.
  
  6. Enter **Callback URL**. 
  
-     The **Callback URL** is the exact location in the service provider's application where a authorization code
-      would be sent. This should be always `{baseUrl}/login/oauth2/code/wso2` .
+     The **Callback URL** is the exact location in the service provider's application where an authorization code
+      would be sent. This should always be `{baseUrl}/login/oauth2/code/wso2` .
       
       If you want configure oidc logout also, then you need to add post-logout-url.  You can add multiple callback
        urls. In WSO2 Identity Server, post-logout-url can be configured via callback URL.
@@ -35,21 +35,21 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
  9. Click on **Access** tab and Note the the **Client ID** and **Client Secret** that appears. 
  
   
-| Field                 | Value                             | 
-| --------------------- | ------------------------------    | 
-| Service Provider Name | your-application-name             |
-| Description           | This is a spring-boot app         | 
-| CallBack Url          | {baseUrl}/login/oauth2/code/wso2  |
-                        |{baseUrl}/spring-boot-app           |
+| Field                 | Value                                                             | 
+| --------------------- | ------------------------------                                    | 
+| Service Provider Name | your-application-name                                             |
+| Description           | This is a spring-boot app                                         | 
+| CallBack Url          | {baseUrl}/login/oauth2/code/wso2, {baseUrl}/spring-boot-app/login |
+                                
 
 **Eg:**
  
-| Field                 | Value                                                         | 
-| --------------------- | -----------------------------                                 | 
-| Service Provider Name | sample-app                                                    |
-| Description           | This is a spring-boot application                             | 
-| CallBack Url          | http://localhost:8080/sprinb-boot-app/login/oauth2/code/wso2  |
-                        | http://localhost:8080/spring-boot-app                         |
+| Field                 | Value                                                                                                     | 
+| --------------------- | -----------------------------                                                                             | 
+| Service Provider Name | sample-app                                                                                                |
+| Description           | This is a spring-boot application                                                                         | 
+| CallBack Url          | http://localhost:8080/spring-boot-app/login/oauth2/code/wso2,http://localhost:8080/spring-boot-app/login  |
+                        |                          
  
  # Configure the Sample
   
@@ -88,23 +88,10 @@ client:
 ```
 
  ## Build the sample and Run it
- 
-**Option 1:  Get the war file to deploy and Run it**
  - You can clone this project and build it. 
  - Run `mvn clean install`. 
  - Get the `spring-boot-sample.war` file from `target` folder
  - Deploy the sample into the tomcat and start the tomcat
- 
- **Option 2: Run the sample using embedded tomcat**
- - You can clone this project. 
- - Comment out the following dependency in the `pom.xml` file.
- 
-     ```xml
-    <dependency>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-starter-tomcat</artifactId>
-         <scope>provided</scope>
-    </dependency>
-    ```
-- Run the command `mvn clean spring-boot:run`
+ - Access `http://localhost:8080/spring-boot-sample/login` if your tomcat is running in port 8080. If not, change the
+  port and host accordingly
  
