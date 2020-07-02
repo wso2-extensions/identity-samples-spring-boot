@@ -1,0 +1,29 @@
+provider:
+  host: https://localhost:9443 #Change the host
+
+client:
+  client-id: LQTLEgDFil5Tyf0wS5KWUShkMDEa #Change client-id
+  client-secret: ZuFwLrbBKhp74NWT1zBIjXuXuYUa # Change client-secret
+  post-logout-uri: http://localhost:8080/spring-boot-sample/login
+  scope: openid
+  authorization-grant-type: authorization_code
+
+
+#No need to change the following configurations
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          wso2:
+            client-name : WSO2 Identity Server
+            client-id: ${client.client-id} #Change client-id
+            client-secret: ${client.client-secret} # Change client-secret
+            authorization-grant-type: ${client.authorization-grant-type}
+            scope: ${client.scope}
+        provider:
+          wso2:
+            issuer-uri: ${provider.host}/oauth2/oidcdiscovery
+
+  thymeleaf:
+    cache: false
