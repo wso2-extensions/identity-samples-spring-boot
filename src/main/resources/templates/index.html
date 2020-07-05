@@ -50,14 +50,13 @@
             <div>
                 <div style="float:left">
                     <form th:action="@{/userinfo}" method="get">
-                        <input class="btn primary" type="submit" value="Get User Info"/>
+                        <button class="btn primary" type="submit">View IDToken</button>
                     </form>
                 </div>
             </div>
             <div>
-                <div style="float:none">&nbsp;</div>
                 <div style="float:right">
-                    <form method="post" th:action="@{/logout}" class="navbar-form navbar-right">
+                    <form method="post" th:action="@{/logout}">
                         <button class="btn primary" type="submit">Logout</button>
                     </form>
                 </div>
