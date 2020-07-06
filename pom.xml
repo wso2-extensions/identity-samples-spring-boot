@@ -74,14 +74,13 @@
         </dependency>
     </dependencies>
     <scm>
-        <connection>scm:git:https://github.com/wso2-extensions/identity-samples-spring-boot</connection>
-        <url>https://github.com/wso2-extensions/identity-samples-spring-boot</url>
+        <connection>scm:git:https://github.com/wso2-extensions/identity-samples-spring-boot.git</connection>
+        <url>https://github.com/wso2-extensions/identity-samples-spring-boot.git</url>
         <developerConnection>
-            scm:git:https://github.com/wso2-extensions/identity-samples-spring-boot
+            scm:git:https://github.com/wso2-extensions/identity-samples-spring-boot.git
         </developerConnection>
         <tag>HEAD</tag>
     </scm>
-
     <repositories>
         <repository>
             <id>wso2-nexus</id>
