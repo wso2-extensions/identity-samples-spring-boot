@@ -49,13 +49,20 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
 | Service Provider Name | sample-app                                                                                                |
 | Description           | This is a spring-boot application                                                                         | 
 | CallBack Url          | http://localhost:8080/spring-boot-app/login/oauth2/code/wso2,http://localhost:8080/spring-boot-app/login  |
-                        |                          
- 
- # Configure the Sample
+                         
+  ## Build the sample and Run it
   
-- Explode the war file.
+  - You can clone this project and build it. 
+  - Run `mvn clean install`. 
+  - Get the `spring-boot-sample.war` file from `target` folder.
+  - Deploy the sample into the tomcat and start the tomcat.
+  - Access `http://localhost:8080/spring-boot-sample/login` if your tomcat is running in port 8080. If not, change the
+   port and host accordingly.
   
-- Open the `application.yml` file located in `spring-boot-sample/WEB-INF/classes`
+  
+ ## Configure the Sample
+  
+- Open the `application.yml` file located in `spring-boot-sample/WEB-INF/classes` from the exploded war file.
   
 - Update the following configuration. Please note that you should not change any other configurations
   
@@ -86,12 +93,3 @@ client:
   authorization-grant-type: authorization_code
  
 ```
-
- ## Build the sample and Run it
- - You can clone this project and build it. 
- - Run `mvn clean install`. 
- - Get the `spring-boot-sample.war` file from `target` folder
- - Deploy the sample into the tomcat and start the tomcat
- - Access `http://localhost:8080/spring-boot-sample/login` if your tomcat is running in port 8080. If not, change the
-  port and host accordingly
- 
