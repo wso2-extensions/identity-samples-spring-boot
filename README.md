@@ -49,7 +49,7 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
 | Service Provider Name | sample-app                                                                                                |
 | Description           | This is a spring-boot application                                                                         | 
 | CallBack Url          | http://localhost:8080/spring-boot-app/login/oauth2/code/wso2,http://localhost:8080/spring-boot-app/login  |
-                        |                          
+                         
   ## Build the sample and Run it
   
   - You can clone this project and build it. 
