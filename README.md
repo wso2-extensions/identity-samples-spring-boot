@@ -62,7 +62,7 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
   
  ## Configure the Sample
   
-- Open the `application.yml` file located in `spring-boot-sample/WEB-INF/classes`
+- Open the `application.yml` file located in `spring-boot-sample/WEB-INF/classes` from the exploded war file.
   
 - Update the following configuration. Please note that you should not change any other configurations
   
