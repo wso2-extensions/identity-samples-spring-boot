@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.3</version>
+        <version>1.4</version>
         <relativePath/>
     </parent>
     <groupId>org.wso2.identity.sample.oidc</groupId>
