@@ -1,4 +1,4 @@
-# Integrate your Spring-boot application with WSO2 Identity Server
+logoutUrl("/applogout)# Integrate your Spring-boot application with WSO2 Identity Server
 
 ## Overview
 This showcases the capability to integrate your spring-boot application with  WSO2 Identity Server for
@@ -297,7 +297,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                .anyRequest()
                .authenticated()
                .and().oauth2Login().loginPage("/login")
-               .and().logout().logoutUrl("/applogout)
+               .and().logout().logoutUrl("/applogout")
                .logoutSuccessHandler(oidcLogoutSuccessHandler());
 
    }
