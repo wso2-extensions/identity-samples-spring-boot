@@ -1,4 +1,4 @@
-logoutUrl("/applogout)# Integrate your Spring-boot application with WSO2 Identity Server
+# Integrate your Spring-boot application with WSO2 Identity Server
 
 ## Overview
 This showcases the capability to integrate your spring-boot application with  WSO2 Identity Server for
