@@ -297,7 +297,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                .anyRequest()
                .authenticated()
                .and().oauth2Login().loginPage("/login")
-               .and().logout().logoutUrl("/applogout)
+               .and().logout().logoutUrl("/applogout")
                .logoutSuccessHandler(oidcLogoutSuccessHandler());
 
    }
