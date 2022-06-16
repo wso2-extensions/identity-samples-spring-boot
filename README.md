@@ -49,6 +49,15 @@ This sample showcases the how to integrate a spring-boot application with WSO2 I
 | Service Provider Name | sample-app                                                                                                |
 | Description           | This is a spring-boot application                                                                         | 
 | CallBack Url          | http://localhost:8080/spring-boot-app/login/oauth2/code/wso2,http://localhost:8080/spring-boot-app/login  |
+
+  ## Import the IS certificate
+
+1. Download the certificate from the management console (for example, as IsCertificate.cer)
+
+2. Locate $JAVA_HOME/jre/lib/security/cacerts
+
+3. Import the certificate into the cacerts file using the following:
+  keytool -import -alias isCertificate -keystore cacerts -file <IS_CERTIFICATE_FILE_LOCATION>
                          
   ## Build the sample and Run it
   
