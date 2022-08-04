@@ -310,7 +310,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter {
                        this.clientRegistrationRepository);
 
        oidcLogoutSuccessHandler.setPostLogoutRedirectUri(
-               URI.create("http://localhost:8080/sprinb-boot-app"));
+               URI.create("http://localhost:8080/spring-boot-app"));
 
        return oidcLogoutSuccessHandler;
    }
